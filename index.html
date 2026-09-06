@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Truck Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🚚 TruckHub</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to TruckHub</h1>
+        <p>Scroll down to see the truck in action!</p>
+    </section>
+
+    <!-- Truck Animation Section -->
+    <div class="truck-container">
+        <div class="road">
+            <div class="truck" id="truck">
+                <div class="cabin">
+                    <div class="window"></div>
+                </div>
+                <div class="cargo">
+                    <div class="cargo-inner"></div>
+                </div>
+                <div class="wheels">
+                    <div class="wheel"></div>
+                    <div class="wheel"></div>
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">↓ Keep scrolling! ↓</div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <div class="service-icon">📦</div>
+                <h3>Fast Delivery</h3>
+                <p>Quick and reliable shipping services across the country</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🛡️</div>
+                <h3>Secure Transport</h3>
+                <p>Your cargo is safe with our professional team</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💰</div>
+                <h3>Affordable Rates</h3>
+                <p>Competitive pricing for all types of shipments</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">⏰</div>
+                <h3>24/7 Support</h3>
+                <p>Round-the-clock customer service and tracking</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About TruckHub</h2>
+        <div class="about-content">
+            <p>TruckHub is a leading transportation company dedicated to providing efficient and reliable logistics solutions. With years of experience in the industry, we've helped thousands of businesses get their products to market on time.</p>
+            <div class="stats">
+                <div class="stat">
+                    <h3>5000+</h3>
+                    <p>Deliveries Completed</p>
+                </div>
+                <div class="stat">
+                    <h3>50+</h3>
+                    <p>Active Trucks</p>
+                </div>
+                <div class="stat">
+                    <h3>15+</h3>
+                    <p>Years in Business</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            <button onclick="sendMessage()">Send Message</button>
+            <div id="messageStatus"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 TruckHub. All rights reserved. | Built with ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
